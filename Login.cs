@@ -55,6 +55,7 @@ namespace Manipulación_de_Datos
         }
         private void Login_Load(object sender, EventArgs e)
         {
+            TxtPass.UseSystemPasswordChar = true;
             string usuario = bd.selectstring("SELECT id_usuario FROM USUARIOS ");
             if (usuario.Length > 0)
                 {
@@ -62,14 +63,24 @@ namespace Manipulación_de_Datos
                 }
                 else
                 {
+                lblregistro.Visible = true;
                 lblregistro.Enabled = true;   
             }
         }
         private void lblregistro_Click(object sender, EventArgs e)
         {
-            frmRegistrar_Usuarios registro = new frmRegistrar_Usuarios();
+            Registrar_Usuario_nuevo registro = new Registrar_Usuario_nuevo();
             this.Hide();
             registro.Show();
+        }
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            TxtPass.UseSystemPasswordChar = false;
+        }
+
+        private void visible_DoubleClick(object sender, EventArgs e)
+        {
+            TxtPass.UseSystemPasswordChar = true;
         }
     }
 }

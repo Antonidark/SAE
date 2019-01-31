@@ -50,6 +50,21 @@ namespace Manipulación_de_Datos
             inicio.Show();
             this.Hide();
         }
+
+        private void frmContraseña_Load(object sender, EventArgs e)
+        {
+            TxtRespuesta.UseSystemPasswordChar = true;
+        }
+
+        private void visible_Click(object sender, EventArgs e)
+        {
+            TxtRespuesta.UseSystemPasswordChar = false;
+        }
+
+        private void visible_DoubleClick(object sender, EventArgs e)
+        {
+            TxtRespuesta.UseSystemPasswordChar = true;
+        }
     }
 }
 

@@ -84,11 +84,11 @@
     <Compile Include="frmMenú.Designer.cs">
       <DependentUpon>frmMenú.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRegistrar_Usuarios.cs">
+    <Compile Include="Registrar_Usuario_nuevo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRegistrar_Usuarios.Designer.cs">
-      <DependentUpon>frmRegistrar_Usuarios.cs</DependentUpon>
+    <Compile Include="Registrar_Usuario_nuevo.Designer.cs">
+      <DependentUpon>Registrar_Usuario_nuevo.cs</DependentUpon>
     </Compile>
     <Compile Include="frmREGISTROS.cs">
       <SubType>Form</SubType>
@@ -125,8 +125,8 @@
     <EmbeddedResource Include="frmMenú.resx">
       <DependentUpon>frmMenú.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRegistrar_Usuarios.resx">
-      <DependentUpon>frmRegistrar_Usuarios.cs</DependentUpon>
+    <EmbeddedResource Include="Registrar_Usuario_nuevo.resx">
+      <DependentUpon>Registrar_Usuario_nuevo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmREGISTROS.resx">
       <DependentUpon>frmREGISTROS.cs</DependentUpon>
@@ -292,6 +292,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ojo_contraseña.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

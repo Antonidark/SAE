@@ -81,7 +81,9 @@ namespace Manipulación_de_Datos
 
         private void frmMenú_Load(object sender, EventArgs e)
         {
-            txtUsuario.Text = Datos.bienvenido.ToString();
+            string hola = Datos.bienvenido.ToString();
+            string mensaje = "Bienvenido  " + hola;
+            MessageBox.Show(mensaje, "Binvenido", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
         }
     }
 }

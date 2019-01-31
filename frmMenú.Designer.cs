@@ -33,20 +33,18 @@
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.archivoDeWordToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.historialDeVentasPorCliienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtUsuario = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
@@ -81,7 +79,7 @@
             this.salirToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivoDeWordToolStripMenuItem1});
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(126, 30);
             this.salirToolStripMenuItem.Text = "Abrir";
             // 
             // archivoDeWordToolStripMenuItem1
@@ -89,6 +87,12 @@
             this.archivoDeWordToolStripMenuItem1.Name = "archivoDeWordToolStripMenuItem1";
             this.archivoDeWordToolStripMenuItem1.Size = new System.Drawing.Size(259, 30);
             this.archivoDeWordToolStripMenuItem1.Text = "Documento de Word";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(98, 29);
+            this.toolStripMenuItem1.Text = "Informes";
             // 
             // clientesToolStripMenuItem
             // 
@@ -103,6 +107,27 @@
             this.productosToolStripMenuItem.Size = new System.Drawing.Size(75, 29);
             this.productosToolStripMenuItem.Text = "Libros";
             this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem3,
+            this.toolStripMenuItem4});
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(100, 29);
+            this.toolStripMenuItem2.Text = "Registros";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(361, 30);
+            this.toolStripMenuItem3.Text = "Lista de registros";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(361, 30);
+            this.toolStripMenuItem4.Text = "Historial de registros por alumno";
             // 
             // ventasToolStripMenuItem
             // 
@@ -156,53 +181,6 @@
             this.pictureBox4.TabIndex = 12;
             this.pictureBox4.TabStop = false;
             // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(98, 29);
-            this.toolStripMenuItem1.Text = "Informes";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem3,
-            this.toolStripMenuItem4});
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(100, 29);
-            this.toolStripMenuItem2.Text = "Registros";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(361, 30);
-            this.toolStripMenuItem3.Text = "Lista de registros";
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(361, 30);
-            this.toolStripMenuItem4.Text = "Historial de registros por alumno";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.label1.Location = new System.Drawing.Point(727, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 25);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Bienvenido: ";
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.AutoSize = true;
-            this.txtUsuario.Font = new System.Drawing.Font("Segoe UI", 14.25F);
-            this.txtUsuario.Location = new System.Drawing.Point(848, 8);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(63, 25);
-            this.txtUsuario.TabIndex = 15;
-            this.txtUsuario.Text = "label4";
-            // 
             // frmMenú
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -210,8 +188,6 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1350, 729);
-            this.Controls.Add(this.txtUsuario);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStrip1);
@@ -247,7 +223,5 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label txtUsuario;
     }
 }

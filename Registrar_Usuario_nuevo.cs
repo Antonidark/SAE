@@ -3,10 +3,10 @@ using System.Windows.Forms;
 
 namespace Manipulación_de_Datos
 {
-    public partial class frmRegistrar_Usuarios : Form
+    public partial class Registrar_Usuario_nuevo : Form
     {
         private Conexión_y_Manipulación_de_BD manipulación = new Conexión_y_Manipulación_de_BD();
-        public frmRegistrar_Usuarios()
+        public Registrar_Usuario_nuevo()
         {
             InitializeComponent();
         }
@@ -41,6 +41,30 @@ namespace Manipulación_de_Datos
             {
                 MessageBox.Show("Faltan datos por guardar.", "Error...", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        private void Registrar_Usuario_nuevo_Load(object sender, EventArgs e)
+        {
+            TxtPass.UseSystemPasswordChar = true;
+            TxtFrase.UseSystemPasswordChar = true;
+        }
+
+        private void visible_Click(object sender, EventArgs e)
+        {
+            TxtPass.UseSystemPasswordChar = false;
+        }
+        private void visible_DoubleClick(object sender, EventArgs e)
+        {
+            TxtPass.UseSystemPasswordChar = true;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            TxtFrase.UseSystemPasswordChar = false;
+        }
+
+        private void pictureBox2_DoubleClick(object sender, EventArgs e)
+        {
+            TxtFrase.UseSystemPasswordChar = true;
         }
     }
 }

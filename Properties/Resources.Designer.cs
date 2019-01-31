@@ -293,6 +293,16 @@ namespace Manipulación_de_Datos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ojo_contraseña {
+            get {
+                object obj = ResourceManager.GetObject("ojo_contraseña", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PALOMITA {
             get {
                 object obj = ResourceManager.GetObject("PALOMITA", resourceCulture);

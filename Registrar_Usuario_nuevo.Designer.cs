@@ -1,6 +1,6 @@
 ﻿namespace Manipulación_de_Datos
 {
-    partial class frmRegistrar_Usuarios
+    partial class Registrar_Usuario_nuevo
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.visible = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CMBPrivilegios = new System.Windows.Forms.ComboBox();
             this.TxtFrase = new System.Windows.Forms.TextBox();
@@ -38,15 +39,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.visible)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.groupBox1.Controls.Add(this.pictureBox2);
+            this.groupBox1.Controls.Add(this.visible);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.CMBPrivilegios);
             this.groupBox1.Controls.Add(this.TxtFrase);
@@ -64,6 +70,20 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Formulario";
+            // 
+            // visible
+            // 
+            this.visible.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.visible.Image = global::Manipulación_de_Datos.Properties.Resources.ojo_contraseña;
+            this.visible.Location = new System.Drawing.Point(237, 183);
+            this.visible.Name = "visible";
+            this.visible.Padding = new System.Windows.Forms.Padding(10);
+            this.visible.Size = new System.Drawing.Size(19, 28);
+            this.visible.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.visible.TabIndex = 19;
+            this.visible.TabStop = false;
+            this.visible.Click += new System.EventHandler(this.visible_Click);
+            this.visible.DoubleClick += new System.EventHandler(this.visible_DoubleClick);
             // 
             // pictureBox1
             // 
@@ -99,7 +119,7 @@
             // TxtPass
             // 
             this.TxtPass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPass.Location = new System.Drawing.Point(6, 184);
+            this.TxtPass.Location = new System.Drawing.Point(6, 186);
             this.TxtPass.Name = "TxtPass";
             this.TxtPass.Size = new System.Drawing.Size(230, 21);
             this.TxtPass.TabIndex = 13;
@@ -156,22 +176,6 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Nombre:";
             // 
-            // button1
-            // 
-            this.button1.AutoSize = true;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::Manipulación_de_Datos.Properties.Resources.PALOMITA;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(182, 327);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 46);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "&Guardar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // button2
             // 
             this.button2.AutoSize = true;
@@ -188,7 +192,37 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // frmRegistrar_Usuarios
+            // button1
+            // 
+            this.button1.AutoSize = true;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::Manipulación_de_Datos.Properties.Resources.PALOMITA;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(182, 327);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 46);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "&Guardar";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::Manipulación_de_Datos.Properties.Resources.ojo_contraseña;
+            this.pictureBox2.Location = new System.Drawing.Point(237, 227);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Padding = new System.Windows.Forms.Padding(10);
+            this.pictureBox2.Size = new System.Drawing.Size(19, 28);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pictureBox2.DoubleClick += new System.EventHandler(this.pictureBox2_DoubleClick);
+            // 
+            // Registrar_Usuario_nuevo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -197,12 +231,15 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
-            this.Name = "frmRegistrar_Usuarios";
+            this.Name = "Registrar_Usuario_nuevo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro";
+            this.Load += new System.EventHandler(this.Registrar_Usuario_nuevo_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.visible)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,5 +259,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox visible;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

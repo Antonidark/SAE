@@ -36,8 +36,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.TxtUser = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.visible = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.visible)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -85,6 +87,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.visible);
             this.groupBox1.Controls.Add(this.TxtRespuesta);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.TxtUser);
@@ -139,6 +142,20 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Nombre de usuario:";
             // 
+            // visible
+            // 
+            this.visible.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.visible.Image = global::Manipulación_de_Datos.Properties.Resources.ojo_contraseña;
+            this.visible.Location = new System.Drawing.Point(265, 217);
+            this.visible.Name = "visible";
+            this.visible.Padding = new System.Windows.Forms.Padding(10);
+            this.visible.Size = new System.Drawing.Size(19, 28);
+            this.visible.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.visible.TabIndex = 20;
+            this.visible.TabStop = false;
+            this.visible.Click += new System.EventHandler(this.visible_Click);
+            this.visible.DoubleClick += new System.EventHandler(this.visible_DoubleClick);
+            // 
             // frmContraseña
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -151,9 +168,11 @@
             this.Name = "frmContraseña";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Recuperar Contraseña";
+            this.Load += new System.EventHandler(this.frmContraseña_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.visible)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,5 +187,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox TxtUser;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox visible;
     }
 }
